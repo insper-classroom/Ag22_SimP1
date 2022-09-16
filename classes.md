@@ -7,6 +7,7 @@ Explicação
 
 ```mermaid
 classDiagram
+direction LR
 class User {
 +nome: str
 }
