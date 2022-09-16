@@ -24,6 +24,10 @@ class Estudante(object):
         self.turmas = [] 
         self.submissoes = []
 
+    def matricular(self, turma:Turma):
+        self.turmas.append(turma)
+        turma.estudantes.append(self)
+
 class Disciplina(object):
     def __init__(self,nome):
         self.nome = nome 
@@ -32,10 +36,12 @@ class Turma(object):
     EM_ABERTO = 0 
     CONCLUIDO = 1
     CANCELADO = 2
-    def __init__(self,nome, data = datetime.now):
+    def __init__(self,disciplina:Disciplina, nome:str, data = datetime.now):
         self.nome = nome
         self.status = Turma.EM_ABERTO
         self.data = data
+        self.estudantes = []
+        self.disciplina = disciplina
 
 
 class Tarefa(object):

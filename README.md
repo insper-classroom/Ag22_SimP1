@@ -1,21 +1,48 @@
 # Ag22_SimP1
-Simulado da P1
+
+# Simulado da P1
+
+## Atenção: Realize todas as mudanças e consertos que eventualmente se tornarem necessário
 
 
-O diagrama de classes mostra como funciona um sistema de LMS 
+O diagrama de classes mostra como funciona um sistema de LMS (Learning Management System) chamado QuadroNegro 
 
-Explicação das classes
+As classes de negócio estão no `model/quadronegro.py`
 
-Termine de implementar a classe:
-Baseie os nomes dos métodos no diagrama de classe
-A descrição do que as funções devem fazer é conforme a seguir
+O web service Flask deve ficar em `app.py`
+
+Os testes devem ficar na pasta `teste`
+
+# Classes
+
+Um estudante está matriculado em uma ou mais turmas. Ex.: "Diana está na Turma de DevLife de 2022/1"
+
+Cada turma tem vários estudantes.
+
+Uma turma está relacionada a uma disciplina. Por exemplo a turm a "Devlife 2022/1" está relacionada à disciplina "DevLife". 
+
+As turmas têm status `EM_ABERTO` durante o ano corrente, mas depois precisam virar para status `CONCLUIDO`. 
+
+Cada turma vai ter diversas instâncias da classe `Tarefa`, cada tarefa pertence só a uma turma.
+
+Os objetos da classe `Tarefa` têm o método `submeter` que permitem que o aluno envie uma submissão para aquela tarefa e já auto-corrige. A correção neste exemplo só compara duas strings e a nota é quanto elas são similares. 
+
+A classe `FachadaTarefa`  deve usar as demais classes do quadronegro para implementar o que está pedido nas docstrings do método (as strings soltas). Esta classe depois vai ser chamada em app.py. 
+
+Tanto `Estudante` quando `Professor` são classes filhas da classe `User`. Você não vai precisar mexer em *User* nem em *Professor*.
+
+
+
+
+
+
 
 
 # Diagrama de classes 
 
 Diagrama de classes da aplicação
 
-Explicação
+
 
 
 ```mermaid
