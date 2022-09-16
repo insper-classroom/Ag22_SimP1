@@ -31,7 +31,17 @@ class Disciplina(object):
     def __init__(self,nome):
         self.nome = nome 
 
-
+class Turma(object):
+    EM_ABERTO = 0 
+    CONCLUIDO = 1
+    CANCELADO = 2
+    def __init__(self,disciplina:Disciplina, nome:str, data = datetime.datetime.now()):
+        self.nome = nome
+        self.status = Turma.EM_ABERTO
+        self.data = data
+        self.estudantes = []
+        self.disciplina = disciplina
+        self.tarefas = []
 
 class Tarefa(object):
     submissoes = []
@@ -40,7 +50,7 @@ class Tarefa(object):
         self.gabarito = gabarito
 
     def submeter(self, resposta, aluno, data = datetime.datetime.now()):
-        submissao = Submissao(resposta)
+        submissao = Submissao(self, resposta)
         submissao.nota = corrigir(self.gabarito, submissao.resposta)
         Tarefa.submissoes.append(submissao)
         aluno.submissoes.append(submissao) # TODO: isso é um bom encapsulamento? Por quê? 
