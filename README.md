@@ -72,14 +72,14 @@ Implemente a função *xyz* que lista todas as submissões de um determinado alu
 
 Crie os testes .... 
 
-Checar se as submissões têm texto 
+Checar se as submissões têm texto no atributo  `resposta` 
+
 Checar se as submissões do estudante são de tarefas pertencentes a turmas que o estudante cursa 
+
+
 Checar se o estudante só pertence a determinada turma uma vez
-Checar se as últimas submissões do estudante é que têm maior nota - caso contrário ele entregou algo que piora a nota 
-Checar se a nota do estudante na tarefa é a última?
-Checar se estudante tem submissões em todas as tarefas cujo deadline já passou?
+
 Checar se todas as turmas que o estudante tem em aberto são do ano atual
-Checar se o aluno já deveria ter se formado
 
 
 
