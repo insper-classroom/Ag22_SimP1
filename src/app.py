@@ -14,11 +14,12 @@ def executa_antes_do_primeiro_request():
     estudante = Estudante("Diana Deana")
     estudante.matricular(tur)
     tarefa = Tarefa(tur, "Tarefa 2")
+    tur.tarefas.append(tarefa)
     tarefa = Tarefa(tur, "Tarefa 2")
     tur.tarefas.append(tarefa)
     # complete se necessario mais dados para testar as rotas
 
-    
+
     
 
 @app.route("/")
