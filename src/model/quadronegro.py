@@ -63,7 +63,7 @@ class Tarefa(object):
 
 
 class Submissao(object):
-    def __init(self, tarefa, resposta):
+    def __init__(self, tarefa, resposta):
         self.__nota == 0 
         self.tarefa = tarefa 
         self.resposta = resposta 
