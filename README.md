@@ -43,5 +43,7 @@ Refletir sobre restfullness
 
 Pensar sobre encapsulamento um pouco 
 
+Faça um diagrama de sequência do que acontece quando o método *listar_notas_estudante()* de FachadaTarefa é chamado (num papel e anexe uma foto)
+
 
 
