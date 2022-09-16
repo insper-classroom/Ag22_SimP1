@@ -73,7 +73,7 @@ class Submissao(object):
         return self.__nota
 
     @nota.setter
-    def set_nota(self, nova_nota):
+    def nota(self, nova_nota):
         self.__nota = nova_nota
 
 class FachadaTarefa:
