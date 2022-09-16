@@ -39,7 +39,7 @@ class Tarefa(object):
         self.turma = turma 
         self.gabarito = gabarito
 
-    def submeter(self, resposta, aluno, data = datetime.now):
+    def submeter(self, resposta, aluno, data = datetime.datetime.now()):
         submissao = Submissao(resposta)
         submissao.nota = corrigir(self.gabarito, submissao.resposta)
         Tarefa.submissoes.append(submissao)
