@@ -147,7 +147,12 @@ Faça um diagrama de sequência do que acontece quando o método *listar_notas_e
 
 
 ### Questão 5
-**a**. Pensar sobre encapsulamento um pouco fazer referência ao too - pesquise se necessário
+**a**. Na linha 57 da classe tarefa existe o seguinte comentário:
+```python
+        aluno.submissoes.append(submissao) # TODO: isso é um bom encapsulamento? Por quê? 
+```
+Analise a classe e procure responder à pergunta. Pode pesquisar
+
 
 **b** A classe FachadaTarefa e seu método listar_notas_estudante() são RESTful? Por que não são?  (no simulado pode consultar a aula da semana 5). Como seria o acesso às notas do estudante para uma tarefa de maneira mais RESTful. Dê exemplos de como ficariam os endpoints. 
 
