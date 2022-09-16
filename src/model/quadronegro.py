@@ -29,9 +29,13 @@ class Disciplina(object):
         self.nome = nome 
 
 class Turma(object):
-    def __init__(self,nome):
+    EM_ABERTO = 0 
+    CONCLUIDO = 1
+    CANCELADO = 2
+    def __init__(self,nome, data = datetime.now):
         self.nome = nome
-
+        self.status = Turma.EM_ABERTO
+        self.data = data
 
 
 class Tarefa(object):
