@@ -28,9 +28,13 @@ class Disciplina(object):
         self.nome = nome 
 
 class Turma(object):
-    def __init__(self,nome):
+    EM_ABERTO = 0 
+    CONCLUIDO = 1
+    CANCELADO = 2
+    def __init__(self,nome, data = datetime.now):
         self.nome = nome
-
+        self.status = Turma.EM_ABERTO
+        self.data = data
 
 
 class Tarefa(object):
@@ -43,7 +47,13 @@ class Tarefa(object):
         submissao = Submissao(resposta)
         submissao.nota = corrigir(self.gabarito, submissao.resposta)
         Tarefa.submissoes.append(submissao)
-        aluno.submissoes.append(submissao) # isso é um bom encapsulamento? Por quê? 
+        aluno.submissoes.append(submissao) # TODO: isso é um bom encapsulamento? Por quê? 
+
+    @classmethod
+    def listar_submissoes_aluno(cls, estudante:Estudante): 
+        """Lista todas as submissões de um dado aluno"""
+        # TODO: implementar
+        pass
 
 
 class Submissao(object):

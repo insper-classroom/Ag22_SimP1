@@ -15,8 +15,25 @@ def executa_antes_do_primeiro_request():
 def hello_world():
     return "<p>Hello, Prova AG22!</p>"
 
+# TODO: definir rota  @app.route( etc)
+def listar_tarefas():
+    """Deve retornar uma lista com o nome de todas as tarefas"""
+    # TODO: Chamar quadronegro.FachadaTarefas.listar_tarefas
+    # implementar lá
+    pass
 
+# TODO: definir rota  @app.route( etc)
+def listar_notas_estudante(nome_tarefa:str, nome_estudante:str):
+    """Deve retornar uma lista com as notas que o estudante obteve em todas as suas submissões para uma dada tarefa"""
+    # TODO: chamar a função correspondente de FachadaTarefas
+    # implementar lá
+    pass
 
+# TODO: definir rota  @app.route( etc)
+def listar_disciplinas(nome_estudante:str):
+    # TODO: chamar a função correspondente de FachadaTarefas
+    # implementar lá
+    pass
 
 
 
