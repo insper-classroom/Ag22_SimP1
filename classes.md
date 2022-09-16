@@ -15,6 +15,7 @@ class Professor {
 turmas_lecionadas:list~Turma~ 
 }
 class Estudante {
++estudante_id:str
 turmas_cursadas:list~Turma~ 
 submissoes:list~Submissao~ 
 }
@@ -25,10 +26,16 @@ class Turma {
 disciplina:Disciplina
 }
 class Tarefa {
+$tarefas: list~Tarefa~
 submissoes:list~Submissao~
+$obter_tarefas():list~Tarefa~
 }
 class Submissao {
 tarefa:Tarefa
+}
+class FachadaTarefa{
++listar_tarefas():list~str~
++listar_notas_estudante(nome_tarefa:str, estudante_id:str):list~dict~
 }
 Estudante "n" -- "m" Turma 
 Estudante "1" -- "n" Submissao 
@@ -38,5 +45,7 @@ Disciplina "1" -- "n" Turma
 Professor "n" -- "m" Turma
 User <|-- Estudante
 User <|-- Professor
+FachadaTarefa ..> Tarefa 
+FachadaTarefa ..> Estudante
 ```
 
