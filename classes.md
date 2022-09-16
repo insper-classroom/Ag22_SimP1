@@ -7,28 +7,27 @@ Explicação
 
 ```mermaid
 classDiagram
-graph LR
 class User {
-+String nome
++nome: str
 }
 class Professor {
-list~Turma~ turmas_lecionadas
+turmas_lecionadas:list~Turma~ 
 }
 class Estudante {
-list~Turma~ turmas_cursadas
-list~Submissao~ submissoes
+turmas_cursadas:list~Turma~ 
+submissoes:list~Submissao~ 
 }
 class Disciplina {
-list~Turma~ turmas_oferecidas
+turmas_oferecidas:list~Turma~
 }
 class Turma {
-Disciplina disciplina
+disciplina:Disciplina
 }
 class Tarefa {
-list~Submissao~ submissoes
+submissoes:list~Submissao~
 }
 class Submissao {
-Tarefa tarefa
+tarefa:Tarefa
 }
 Estudante "n" -- "m" Turma 
 Estudante "1" -- "n" Submissao 
