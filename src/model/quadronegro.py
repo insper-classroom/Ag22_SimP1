@@ -64,16 +64,12 @@ class Tarefa(object):
 
 class Submissao(object):
     def __init__(self, tarefa, resposta):
-        self.__nota == 0 
+        self.__nota = 0
         self.tarefa = tarefa 
         self.resposta = resposta 
 
     @property
     def nota(self):
-        return self.__nota
-
-    @nota.getter
-    def get_nota(self):
         return self.__nota
 
     @nota.setter
