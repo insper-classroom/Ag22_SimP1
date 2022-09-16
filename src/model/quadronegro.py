@@ -36,30 +36,34 @@ class Turma(object):
 
 class Tarefa(object):
     submissoes = []
-    def __init__(turma, gabarito):
+    def __init__(self, turma, gabarito):
         self.turma = turma 
         self.gabarito = gabarito
 
-    def submeter(resposta, aluno, data = datetime.now):
+    def submeter(self, resposta, aluno, data = datetime.now):
         submissao = Submissao(resposta)
         submissao.nota = corrigir(self.gabarito, submissao.resposta)
-        submissoes.append(submissao)
+        Tarefa.submissoes.append(submissao)
         aluno.submissoes.append(submissao) # isso é um bom encapsulamento? Por quê? 
 
 
 class Submissao(object):
-    def __init(tarefa, resposta)
+    def __init(self, tarefa, resposta):
         self.__nota == 0 
         self.tarefa = tarefa 
         self.resposta = resposta 
 
     @property
-    def nota():
-
-    @nota.getter
-    def get_nota():
+    def nota(self):
         return self.__nota
 
+    @nota.getter
+    def get_nota(self):
+        return self.__nota
+
+    @nota.setter
+    def set_nota(self, nova_nota):
+        self.__nota = nova_nota
 
 class FachadaTarefa:
     def listar_tarefas():
