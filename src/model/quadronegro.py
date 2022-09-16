@@ -7,7 +7,6 @@ def corrigir(gabarito, resposta):
     return 10*(1 - dif.ratio())
 
 
-
 class User(object):
     def __init__(self, nome):
         self.nome = nome 
