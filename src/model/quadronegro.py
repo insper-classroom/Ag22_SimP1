@@ -23,7 +23,7 @@ class Estudante(object):
         self.turmas = [] 
         self.submissoes = []
 
-    def matricular(self, turma:Turma):
+    def matricular(self, turma):
         self.turmas.append(turma)
         turma.estudantes.append(self)
 
@@ -31,17 +31,6 @@ class Disciplina(object):
     def __init__(self,nome):
         self.nome = nome 
 
-class Turma(object):
-    EM_ABERTO = 0 
-    CONCLUIDO = 1
-    CANCELADO = 2
-    def __init__(self,disciplina:Disciplina, nome:str, data = datetime.now):
-        self.nome = nome
-        self.status = Turma.EM_ABERTO
-        self.data = data
-        self.estudantes = []
-        self.disciplina = disciplina
-        self.tarefas = []
 
 
 class Tarefa(object):
@@ -101,7 +90,7 @@ if __name__ == "__main__":
     estudante.matricular(tur)
     tarefa = Tarefa(tur, "Pedro Álvares Cabral")
     tur.tarefas.append(tarefa)
-    tarefa.submeter("Pedro A", estudante, datetime.datetime(2022, 09, 16))
+    tarefa.submeter("Pedro A", estudante, datetime.datetime(2022, 9, 16))
     
 
 
