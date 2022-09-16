@@ -1,4 +1,4 @@
-from quadronegro import *
+from src.model.quadronegro import *
 import pytest
 
 # Checar se as submissões têm texto no atributo  `resposta`
