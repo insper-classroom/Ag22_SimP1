@@ -28,7 +28,7 @@ disciplina:Disciplina
 class Tarefa {
 $ tarefas: list~Tarefa~ *da classe*
 submissoes:list~Submissao~
-$ obter_tarefas():list~Tarefa~ *classmethod*
+$ classmethod obter_tarefas():list~Tarefa~ 
 }
 class Submissao {
 tarefa:Tarefa
