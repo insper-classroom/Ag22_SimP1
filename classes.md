@@ -7,7 +7,7 @@ Explicação
 
 ```mermaid
 classDiagram
-graph LR;
+graph LR
 class User {
 +String nome
 }
