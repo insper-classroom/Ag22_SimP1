@@ -26,9 +26,9 @@ class Turma {
 disciplina:Disciplina
 }
 class Tarefa {
-$ tarefas: list~Tarefa~
+$ tarefas: list~Tarefa~ *da classe*
 submissoes:list~Submissao~
-$ obter_tarefas():list~Tarefa~
+$ obter_tarefas():list~Tarefa~ *@classmethod*
 }
 class Submissao {
 tarefa:Tarefa
