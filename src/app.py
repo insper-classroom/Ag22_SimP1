@@ -13,8 +13,12 @@ def executa_antes_do_primeiro_request():
     tur = Turma(d, "DevLife 2022/1")
     estudante = Estudante("Diana Deana")
     estudante.matricular(tur)
-    tarefa = Tarefa(tur, "Pedro Álvares Cabral")
+    tarefa = Tarefa(tur, "Tarefa 2")
+    tarefa = Tarefa(tur, "Tarefa 2")
     tur.tarefas.append(tarefa)
+    # complete se necessario mais dados para testar as rotas
+
+    
     
 
 @app.route("/")
