@@ -41,6 +41,7 @@ class Turma(object):
         self.data = data
         self.estudantes = []
         self.disciplina = disciplina
+        self.tarefas = []
 
 
 class Tarefa(object):
@@ -92,6 +93,16 @@ class FachadaTarefa:
     def listar_disciplinas(nome_estudante:str): 
         """Deve retornar os nomes de todas as disciplinas que alguém cursa"""
         pass 
+
+if __name__ == "__main__":
+    d = Disciplina("DevLife")
+    tur = Turma(d, "DevLife 2022/1")
+    estudante = Estudante("Diana Deana")
+    estudante.matricular(tur)
+    tarefa = Tarefa(tur, "Pedro Álvares Cabral")
+    tur.tarefas.append(tarefa)
+    tarefa.submeter("Pedro A", estudante, datetime.datetime(2022, 09, 16))
+    
 
 
 
