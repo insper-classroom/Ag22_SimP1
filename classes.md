@@ -5,7 +5,8 @@ Diagrama de classes da aplicação
 Explicação
 
 
-```mermaid 
+```mermaid
+graph LR;
 classDiagram
 class User {
 +String nome
