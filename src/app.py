@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from pathlib import Path
-import pandas as pd
+from src.model.quadronegro import *
+
 
 
 app = Flask(__name__)
@@ -8,7 +9,12 @@ app = Flask(__name__)
 
 @app.before_first_request
 def executa_antes_do_primeiro_request():
-    pass
+    d = Disciplina("DevLife")
+    tur = Turma(d, "DevLife 2022/1")
+    estudante = Estudante("Diana Deana")
+    estudante.matricular(tur)
+    tarefa = Tarefa(tur, "Pedro Álvares Cabral")
+    tur.tarefas.append(tarefa)
     
 
 @app.route("/")

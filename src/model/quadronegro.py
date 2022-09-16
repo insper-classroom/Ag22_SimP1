@@ -45,9 +45,11 @@ class Turma(object):
 
 class Tarefa(object):
     submissoes = []
+    tarefas = [] # adicionado
     def __init__(self, turma, gabarito):
         self.turma = turma 
         self.gabarito = gabarito
+        Tarefa.tarefas.append(self) # adicionado
 
     def submeter(self, resposta, aluno, data = datetime.datetime.now()):
         submissao = Submissao(self, resposta)
