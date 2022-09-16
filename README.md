@@ -22,12 +22,17 @@ Checar se o estudante só pertence a determinada turma uma vez
 Checar se as últimas submissões do estudante é que têm maior nota - caso contrário ele entregou algo que piora a nota 
 Checar se a nota do estudante na tarefa é a última?
 Checar se estudante tem submissões em todas as tarefas cujo deadline já passou?
-Checar se todas as turmas que o estudante tem em aberto são do ano atual 
+Checar se todas as turmas que o estudante tem em aberto são do ano atual
+Checar se o aluno já deveria ter se formado
 
 
 
 
-Crie um endpoint/um web service rest/etc que encapsule a função xyz da classe xyz  
+Crie um endpoint/um web service rest/etc que encapsule a função xyz da classe xyz 
+
+Usando o postman, crie um trecho de código que use a biblioteca requests e que acesse seu próprio código
+
+Para testar, rode o flask e execute o web service e num outro terminal ou janela execute o código com requests 
 
 
 **Questões conceituais**
