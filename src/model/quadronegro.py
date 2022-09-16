@@ -48,7 +48,13 @@ class Tarefa(object):
         submissao = Submissao(resposta)
         submissao.nota = corrigir(self.gabarito, submissao.resposta)
         Tarefa.submissoes.append(submissao)
-        aluno.submissoes.append(submissao) # isso é um bom encapsulamento? Por quê? 
+        aluno.submissoes.append(submissao) # TODO: isso é um bom encapsulamento? Por quê? 
+
+    @classmethod
+    def listar_submissoes_aluno(cls, estudante:Estudante): 
+        """Lista todas as submissões de um dado aluno"""
+        # TODO: implementar
+        pass
 
 
 class Submissao(object):
