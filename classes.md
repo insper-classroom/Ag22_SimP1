@@ -36,6 +36,7 @@ tarefa:Tarefa
 class FachadaTarefa{
 +listar_tarefas():list~str~
 +listar_notas_estudante(nome_tarefa:str, nome_estudante:str):->list~dict~
++listar_disciplinas(nome_estudante:str):->list~dict~
 }
 Estudante "n" -- "m" Turma 
 Estudante "1" -- "n" Submissao 
