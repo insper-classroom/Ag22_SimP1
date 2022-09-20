@@ -1,9 +1,9 @@
 # Ag22_SimP1
 
 ```diff
-GABARITO
+-GABARITO
 
-Para ter acesso ao texto original consulte a branch main deste repo.
+-Para ter acesso ao texto original consulte a branch main deste repo.
 
 ```
 
