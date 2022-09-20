@@ -1,5 +1,12 @@
 # Ag22_SimP1
 
+```diff
+GABARITO
+
+Para ter acesso ao texto original consulte a branch main deste repo.
+
+```
+
 # Simulado da P1
 
 ## Atenção: Realize todas as mudanças e consertos que eventualmente se tornarem necessário
