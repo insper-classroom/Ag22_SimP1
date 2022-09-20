@@ -35,7 +35,7 @@ class Turma(object):
     EM_ABERTO = 0 
     CONCLUIDO = 1
     CANCELADO = 2
-    def __init__(self,disciplina:Disciplina, nome:str, data = datetime.datetime.now()):
+    def __init__(self, disciplina:Disciplina, nome:str, data = datetime.datetime.now()):
         self.nome = nome
         self.status = Turma.EM_ABERTO
         self.data = data
@@ -60,9 +60,13 @@ class Tarefa(object):
     @classmethod
     def listar_submissoes_aluno(cls, estudante:Estudante): 
         """Lista todas as submissões de um dado aluno"""
-        # TODO: implementar
-        pass
-
+        # Resposta da Q1 
+        resposta = [] 
+        for s in cls.submissoes: 
+            if s in estudante.submissoes:
+                # se chegou aqui a submissão está nas submissões do aluno
+                resposta.append(s)
+        return resposta
 
 class Submissao(object):
     def __init__(self, tarefa, resposta):
@@ -77,6 +81,12 @@ class Submissao(object):
     @nota.setter
     def nota(self, nova_nota):
         self.__nota = nova_nota
+
+    # Adicionado como parte do gabarito da q1 para conseguir imprimir melhor.
+    # Não é necessário
+    def __str__(self):
+        return f"Submissao {self.resposta[0:30]}   {self.tarefa.gabarito[:50]}"
+
 
 class FachadaTarefa:
     def listar_tarefas():
@@ -98,7 +108,15 @@ if __name__ == "__main__":
     estudante.matricular(tur)
     tarefa = Tarefa(tur, "Pedro Álvares Cabral")
     tur.tarefas.append(tarefa)
+    tarefa2 = Tarefa(tur, "Cristóvão Colombo") # só para deixar o teste melhor
+
     tarefa.submeter("Pedro A", estudante, datetime.datetime(2022, 9, 16))
+    tarefa2.submeter("Francisco Pizarro", estudante, datetime.datetime(2022, 9, 16))
+
+    # Testando a Q1
+    resp = Tarefa.listar_submissoes_aluno(estudante)
+    for r in resp:
+        print(r)
     
 
 
