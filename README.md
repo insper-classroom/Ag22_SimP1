@@ -174,8 +174,18 @@ Respondido no arquivo testes/test_classes.py
 
 Crie um endpoint/um web service rest/etc que encapsule as funções da classe `FachadaTarefa`
 
+**Atenção: vai ser preciso criar uma variável que guarde todos os estudantes para conseguir fazer 2 dos web services
+Nós criaremos a lista estática Estudante.estudantes**
+
 Rode o Flask para testar  seu web service. 
 Usando o postman, teste seu web service e salve a collection como JSON na pasta testes 
+
+```
+Veja a resposta na pasta testes e no código da classe Fachada Tarefa
+
+O arquivo de testes se chama Agil_Sim1_Q3.postman_collection.json
+
+```
 
 
 ### Questão 4
