@@ -107,7 +107,6 @@ if __name__ == "__main__":
     estudante = Estudante("Diana Deana")
     estudante.matricular(tur)
     tarefa = Tarefa(tur, "Pedro Álvares Cabral")
-    tur.tarefas.append(tarefa)
     tarefa2 = Tarefa(tur, "Cristóvão Colombo") # só para deixar o teste melhor
 
     tarefa.submeter("Pedro A", estudante, datetime.datetime(2022, 9, 16))
