@@ -192,6 +192,15 @@ O arquivo de testes se chama Agil_Sim1_Q3.postman_collection.json
 
 Faça um diagrama de sequência do que acontece quando o método *listar_notas_estudante()* de FachadaTarefa é chamado (num papel e anexe uma foto ou faça no site draw.io)
 
+Adotando as mesmas simplificações vistas em sala de aula: 
+* Não vamos mostrar acesso a atributos
+* Vamos mostrar só chamadas a métodos
+* Não é necessário mostrar chamadas condicionais (ifs)
+
+O diagrama fica bem simplificado, conforme abaixo
+
+
+<img src=diag_Q4.jpg></img>
 
 ### Questão 5
 **a**. Na linha 57 da classe tarefa existe o seguinte comentário:
