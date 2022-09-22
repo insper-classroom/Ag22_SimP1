@@ -178,8 +178,39 @@ Faça um diagrama de sequência do que acontece quando o método *listar_notas_e
 ```
 Analise a classe e procure responder à pergunta. Pode pesquisar
 
+**R.:**
+
+```
+**Não** é um bom encapsulamento.
+
+Num bom encapsulamento os detalhes internos do objeto são protegidos (no caso aqui a lista submissoes dentro do objeto do tipo Aluno).
+
+No código em questão, que está na classe Tarefa, a lista aluno.submissoes é acessada para inserir um elemento sem que a classe Aluno tenha controle. 
+
+Além de violar o encpasulamento, esta linha cria grande acoplamento entre as classes Tarefa e Aluno. Se mudarmos o nome de submissoes em Aluno a classe Tarefa também vai parar de funcionar. 
+
+
+```
+
+
 
 **b** A classe FachadaTarefa e seu método listar_notas_estudante() são RESTful? Por que não são?  (no simulado pode consultar a aula da semana 5). Como seria o acesso às notas do estudante para uma tarefa de maneira mais RESTful. Dê exemplos de como ficariam os endpoints. 
+
+**R.:**
+
+```
+
+Em geral consideramos RESTFul a partir do nível 2 da maturidade de Richardson. Ou seja: URIs indicam os objetos ou entidades e os verbos HTTP são usados para acesso. 
+
+Desta forma, para listar a nota do estudante de maneira RESTFUL deveríamos oferecer um serviço com URLs identificadas como: 
+
+/estunte/ID_estudante/nota/ID_nota
+
+O que não é o caso. 
+
+Portanto o listar_notas_estudante() não está RESFTUL
+
+```
 
 
 
