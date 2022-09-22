@@ -147,16 +147,28 @@ Contudo, a classe permite strings de comprimento zero, então este teste não pa
 ### 2.2 
 Checar se as submissões do estudante são de tarefas pertencentes a turmas que o estudante cursa 
 
+```
+Respondido no arquivo testes/test_classes.py
+```
+
 ### 2.3 
 Checar se o estudante só pertence a determinada turma uma única vez
 
 **Este teste vai falhar e é normal. Eventualmente em caso similar na prova vamos pedir para corrigir a classe**
+
+```
+Respondido no arquivo testes/test_classes.py
+```
 
 ### 2.4
 Checar se todas as turmas que o estudante tem em aberto são do ano atual
 
 **Este teste vai falhar e é normal. Eventualmente em caso similar na prova vamos pedir para corrigir a classe**
 
+
+```
+Respondido no arquivo testes/test_classes.py
+```
 
 ## Questão 3 
 
