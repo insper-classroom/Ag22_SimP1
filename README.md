@@ -130,14 +130,32 @@ Crie os testes a seguir. Cabe a você no setup do teste criar objetos para verif
 
 Checar se as submissões têm texto no atributo  `resposta` 
 
+*
+Neste caso "Checar se as submissões têm texto no atributo  `resposta`" foi um pedido ambíguo.
+
+Pode ser checar se há texto com comprimento maior que zero, ou se a a resposta precisa ser diferente de None.
+
+Lá verificamos se a classe evitou estas situações. 
+
+Note que quando é passado um None uma exceção é disparada na hora da correção, então este teste passa. 
+
+Contudo, a classe permite strings de comprimento zero, então este teste não passa
+
+*
+
+
 ### 2.2 
 Checar se as submissões do estudante são de tarefas pertencentes a turmas que o estudante cursa 
 
 ### 2.3 
 Checar se o estudante só pertence a determinada turma uma única vez
 
+**Este teste vai falhar e é normal. Eventualmente em caso similar na prova vamos pedir para corrigir a classe**
+
 ### 2.4
 Checar se todas as turmas que o estudante tem em aberto são do ano atual
+
+**Este teste vai falhar e é normal. Eventualmente em caso similar na prova vamos pedir para corrigir a classe**
 
 
 ## Questão 3 
