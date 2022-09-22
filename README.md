@@ -130,7 +130,7 @@ Crie os testes a seguir. Cabe a você no setup do teste criar objetos para verif
 
 Checar se as submissões têm texto no atributo  `resposta` 
 
-*
+```
 Neste caso "Checar se as submissões têm texto no atributo  `resposta`" foi um pedido ambíguo.
 
 Pode ser checar se há texto com comprimento maior que zero, ou se a a resposta precisa ser diferente de None.
@@ -141,7 +141,7 @@ Note que quando é passado um None uma exceção é disparada na hora da correç
 
 Contudo, a classe permite strings de comprimento zero, então este teste não passa
 
-*
+```
 
 
 ### 2.2 
